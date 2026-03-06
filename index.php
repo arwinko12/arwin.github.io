@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arwin Emmanuel M. Raganas - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&
+family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <style>
+body{
+  font-family: "Google Sans", sans-serif;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#E86B2C;
+  border-radius:10px;
+}
+
+/* Sections */
+section{
+  min-height:100vh;
+  padding:90px 0;
+}
+
+/* Banner */
+#banner{
+  /*linear-gradient(rgba(41,41,37,0.85),rgba(0,0,0,0.9)),*/
+  background: 
+  url("image/sl_0210121_40570_34.jpg");
+  background-position:center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+/* Headings */
+h1,h3,h5{
+  font-family:"Bungee",sans-serif;
+  color:#fff;
+}
+.navbar-brand{
+  font-family:"Bungee",sans-serif;
+}
+p{
+  color:#ddd;
+}
+
+/* Buttons */
+.btn{
+  background:#E86B2C;
+  border:none;
+  color:#fff;
+  padding:10px 25px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#ff9c52;
+  transform:translateY(-2px);
+}
+
+/* Accent color */
+.orange{
+  color:#E86B2C;
+}
+
+/* Divider */
+.divider{
+  border-bottom:2px solid #E86B2C;
+  width:80px;
+  margin:auto;
+}
+
+/* Navbar */
+.navbar{
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul li a{
+  transition:0.3s;
+}
+
+.navbar ul li a:hover{
+  color:#E86B2C;
+}
+
+/* About */
+#about-me{
+  background:#1A1917;
+}
+
+/* Skills */
+#skills{
+  background:#1A1917;
+}
+
+.skill-card{
+  background:transparent;
+  border:1px solid #E86B2C;
+  transition:0.4s;
+  text-align:center;
+  height:100%;
+}
+
+.skill-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 25px rgba(232,107,44,0.3);
+}
+
+#skills i{
+  font-size:45px;
+  margin:10px 0;
+  color: #E86B2C;
+}
+
+/* What I do */
+#what_id_do{
+  background:#1A1917;
+}
+
+.what_id_do_card{
+  background:transparent;
+  border-left:3px solid #E86B2C;
+  transition:0.4s;
+}
+
+.what_id_do_card:hover{
+  transform:translateY(-10px);
+}
+
+/* Projects */
+#projects{
+  background:#1A1917;
+}
+#contact{
+  background:#1A1917;
+}
+#project-card{
+  background:transparent;
+  border:1px solid #E86B2C;
+  transition:0.4s;
+}
+
+#project-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 30px rgba(232,107,44,0.3);
+}
+
+.card-title{
+  color:#fff;
+}
+
+.card-text{
+  color:#ccc;
+}
+
+/* Footer */
+.footer{
+  background:#111;
+}
+
+.footer-link{
+  text-decoration:none;
+  color:#aaa;
+  transition:0.3s;
+}
+
+.footer-link:hover{
+  color:#fff;
+}
+
+.social-icon{
+  font-size:20px;
+  margin-right:15px;
+  color:#fff;
+  transition:0.3s;
+}
+
+.social-icon:hover{
+  color:#E86B2C;
+}
+
+/* Images */
+.card-img-top{
+  height:220px;
+  object-fit:cover;
+}
+ #banner img{
+   border-radius: 100px;
+   border: 3px solid #E86B2C ;
+   position: relative;
+   top: 20px;
+  }
+/* Responsive */
+@media(max-width:768px){
+
+  section{
+    padding:70px 0;
+  }
+
+  #banner h1{
+    font-size:1.8rem;
+  }
+
+  #banner h3{
+    font-size:1.2rem;
+  }
+
+  #banner img{
+    max-height:320px;
+  }
+
+}
+  </style>
+  <body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand bungee-regular fs-4" href="#"><i class="fa  fa-code fs-2"></i> ARWIN <span class="orange"> EMMANUEL</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#banner">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#what_id_do">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+<br>
+<section id="banner" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-lg-5 col-md-6 text-center text-md-start" data-aos="zoom-in" data-aos-duration="3000">
+        <h3 class="fw-bold">HELLO! I'M <span class="orange">ARWIN EMMANUEL M. RAGANAS</span> </h3>
+        <h1 class="display-5 fw-bold">Web Developer</h1>
+        <p>
+          I build modern websites and web applications using
+          PHP, JavaScript, and modern UI frameworks.
+        </p>
+
+        <a href="#contact" class="btn btn-primary btn-lg">Hire me!</a>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-7 col-md-6 text-center" data-aos="fade-left" data-aos-duration="3000">
+        <img src="image/d23e1f2f-0a57-453c-b71e-59f1f78a3635-removebg-preview.png" class="img-fluid" id="banner-image" alt="Arwin Emmanuel">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about-me">
+  <h1 class="text-center mb-3"><span class="orange">About</span> Me</h1>
+  <div class="divider"></div>
+  <br>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6" data-aos="zoom-out-right" data-aos-duration="3000">
+        <div class="text-center">
+          <img src="image/SKSU_Official_Seal.png" class="rounded-circle mb-3" style="height: 150px; width: 150px; object-fit: contain;">
+        </div>
+        <h3 class="text-center">SULTAN KUDARAT STATE UNIVERSITY</h3>
+        <p>I am a passionate Web Developer and Technical Support professional who enjoys working with technology and solving real-world problems. I graduated from Sultan Kudarat State University, where I developed a strong foundation in information technology, programming, and system management.</p>
+        <p>My experience includes developing web-based systems, managing databases, troubleshooting hardware and software issues, and supporting users with technical concerns. I enjoy creating efficient solutions that improve workflows and help organizations operate smoothly.</p>
+        <p>I focus on building user-friendly systems, writing efficient code, and delivering reliable technical solutions. I continuously improve my skills to stay updated with modern technologies and industry best practices in web development and IT support.</p>
+      </div>
+      <div class="col-lg-6 col-md-6" data-aos="zoom-out-left" data-aos-duration="3000">
+        <img src="image/sksu.jpg" class="img-fluid rounded w-100" alt="SKSU Campus" style="max-height: 500px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container" data-aos="zoom-out-up" data-aos-duration="2000">
+    <h1 class="text-center ">Skills</h1>
+    <div class="divider"></div><br>
+     
+    <div class="row g-3">
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>HTML5, CSS3</p>
+            <i class="fa fa-html5"></i>
+            <h3>88%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>JavaScript & jQuery</p>
+            <i class="fa fa-code"></i>
+            <h3>70%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>PHP & MySQL</p>
+            <i class="fa fa-server"></i>
+            <h3>80%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Bootstrap</p>
+            <i class="fa fa-css3"></i>
+            <h3>100%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Responsive Design</p>
+            <i class="fa fa-window-restore"></i>
+            <h3>100%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>REST APIs</p>
+            <i class="fa fa-bug"></i>
+            <h3>50%</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <h1 class="text-center ">Technical Support</h1>
+    <div class="divider"></div><br>
+     
+    <div class="row g-3">
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Computer Troubleshooting</p>
+            <i class="fa fa-desktop"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Hardware & Software Installation</p>
+            <i class="fa fa-windows"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Network Setup & Configuration</p>
+            <i class="fa fa-globe"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>System <br> Maintenance</p>
+            <i class="fa fa-thumbs-o-up"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>Remote Technical Support</p>
+            <i class="fa fa-window-restore"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="card skill-card">
+          <div class="card-body">
+            <p>User Support & Training</p>
+            <i class="fa fa-laptop"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">My Projects</h1>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100" id="project-card">
+          <img src="image/pos.PNG" class="card-img-top" alt="POS System">
+          <div class="card-body">
+            <h5 class="card-title">POS System</h5>
+            <p class="card-text">
+              A web-based Point of Sale system with product management,
+              sales tracking, and reporting features.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100" id="project-card">
+          <img src="image/car_rent.PNG" class="card-img-top" alt="Car Rental System">
+          <div class="card-body">
+            <h5 class="card-title">Car Rental System</h5>
+            <p class="card-text">
+              A vehicle rental system with booking management and GPS
+              tracking integration.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100" id="project-card">
+          <img src="image/portfolio.PNG" class="card-img-top" alt="Inventory System">
+          <div class="card-body">
+            <h5 class="card-title">Personal Portfolio Website</h5>
+            <p class="card-text">
+              A personal portfolio website designed to showcase my web development projects, technical skills, and experience in building modern web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="what_id_do">
+  <div class="container">
+    <h1>What I do?</h1>
+    <br>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card what_id_do_card">
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p>I create dynamic and responsive websites and web applications using modern web technologies.</p>
+            <img src="image/pexels-pixabay-270488.jpg" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card what_id_do_card">
+          <div class="card-body">
+            <h3>Technical Support</h3>
+            <p>I diagnose and resolve hardware, software, and network issues to ensure systems operate efficiently.</p>
+            <img src="image/pexels-field-engineer-147254-442150.jpg" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card what_id_do_card">
+          <div class="card-body">
+            <h3>System Maintenance</h3>
+            <p>I maintain computer systems, install updates, and ensure devices and applications run smoothly.</p>
+            <img src="image/pexels-mikhail-nilov-9242899.jpg" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="footer  text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5>About Me</h5>
+        <p>
+          I am a passionate Web Developer and Technical Support professional 
+          who enjoys building web systems and solving real-world technical problems.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#banner" class="footer-link">Home</a></li>
+          <li><a href="#about-me" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#what_id_do" class="footer-link">Services</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5>Follow Me</h5>
+        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+        <p class="mt-3">Contact No: +63 931-002-7582</p>
+        <p>Email: raganasarwin7@gmail.com</p>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        © 2026 ARWIN EMMANUEL M. RAGANAS | All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init({
+         once: true,
+         offset: 50
+       });
+       
+       // Smooth scrolling for anchor links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+           e.preventDefault();
+           const target = document.querySelector(this.getAttribute('href'));
+           if (target) {
+             target.scrollIntoView({
+               behavior: 'smooth',
+               block: 'start'
+             });
+           }
+         });
+       });
+       
+       // Close mobile menu after clicking a link
+       const navLinks = document.querySelectorAll('.nav-link');
+       const navbarCollapse = document.querySelector('.navbar-collapse');
+       
+       navLinks.forEach(link => {
+         link.addEventListener('click', () => {
+           if (navbarCollapse.classList.contains('show')) {
+             new bootstrap.Collapse(navbarCollapse).toggle();
+           }
+         });
+       });
+    </script>
+  </body>
+</html>
